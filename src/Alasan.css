@@ -1,0 +1,55 @@
+p{
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1em;
+}
+
+body{
+    color: black;
+    
+    line-height: 1.45;
+    overflow-x: hidden;
+}
+
+.content-container {
+    display: flex;
+  }
+  .content-container > * {
+    width: 50%;
+  }
+  
+  .right-content {
+    padding-right: 15px;
+  }
+  
+  .left-content {
+     height:100vh;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+  .left-content > * {
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    opacity: 1;
+    overflow: hidden; 
+    visibility: hidden;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .left-content {
+      display: none;
+    }
+    .right-content {
+      padding-left: 15px;
+    }
+  }
+  
+
+  
+  .gsap-logo {
+    left: 1rem;
+  }
